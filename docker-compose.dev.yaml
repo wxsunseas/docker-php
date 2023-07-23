@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mysql:
+    ports:
+        - ${DB_PORT}:3306
+  php:
+    ports:
+      - "${PHP_PORT}:9000"
+    
