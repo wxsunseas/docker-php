@@ -39,6 +39,7 @@ services:
     build: 
       context: $PWD/env/php
       dockerfile: Dockerfile
+    image: php
     container_name: dnp-app
     restart: always
     privileged: true
