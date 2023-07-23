@@ -10,10 +10,8 @@ docker的 nginx + php + mysql集成环境
 
 注:
 
-默认mysql 和 php 端口不开放使用
-
-如果需要开放出来使用, 第三步命令改为
-
-```
-docker compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d
-```
+1. 默认mysql 和 php 端口不开放使用
+2. 如果需要开放出来使用, 第三步命令改为 ``docker compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d``
+3. php 添加插件库
+   1. [Dockerfile](./env/php/Dockerfile)中添加所需要的库
+   2. php.ini 中也需要将相应的注释去掉
